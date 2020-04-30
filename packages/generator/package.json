@@ -21,7 +21,8 @@
     "recast": "^0.12.2",
     "semver": "^5.1.0",
     "shelljs": "^0.7.4",
-    "yeoman-generator": "^1.0.1"
+    "yeoman-generator": "^1.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "files": [
@@ -58,6 +59,9 @@
     "build": "npm run clear && babel -d ./generators ./src --copy-files --ignore *.spec.js",
     "clear": "rimraf ./generators",
     "test": "jest",
-    "watch": "babel -w -d ./generators ./src --copy-files"
-  }
+    "watch": "babel -w -d ./generators ./src --copy-files",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
