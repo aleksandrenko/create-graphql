@@ -19,8 +19,8 @@
     "cross-spawn-promise": "^0.10.1",
     "ora": "^1.2.0",
     "shelljs": "^0.7.5",
-    "yeoman-generator": "^0.24.1",
-    "yo": "^1.8.5"
+    "yeoman-generator": "^1.1.1",
+    "yo": "^2.0.3"
   },
   "devDependencies": {},
   "homepage": "https://github.com/lucasbento/create-graphql#readme",
